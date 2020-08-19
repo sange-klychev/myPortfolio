@@ -1,0 +1,76 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+    position: relative;
+    min-width: 320px;
+    @include roboto;
+    color: $text;
+    font-size: 16px;
+}
+input,
+textarea,
+button{
+    border: none;
+    cursor: pointer;
+    outline: transparent;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+.footer{
+    flex: 0 0 auto;
+}
+.container{
+    max-width: 1860px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-fluid{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.title{
+    background-image: url(../images/title-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 48px;
+    color: #151b28;
+    max-width: 610px;
+    min-height: 195px;
+    text-align: center;
+    padding-top: 75px;
+    margin: 0 auto 30px;
+    text-transform: uppercase;
+}

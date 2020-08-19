@@ -1,0 +1,16 @@
+@mixin openSans {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+}
+@mixin roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Selima";
+    src: url(../fonts/selima-webfont.woff),
+         url(../fonts/selima-webfont.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

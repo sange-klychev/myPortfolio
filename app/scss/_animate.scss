@@ -1,0 +1,40 @@
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        transform: translate3d(-2000px,0,0) rotate(-1440deg); 
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0) rotate(0);
+    }
+}
+.animate__fadeInLeft{
+    animation-name: fadeInLeft;
+    animation-duration: 1.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.animate__fadeIn{
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__slideInDown {
+  animation-name: slideInDown;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
