@@ -75,8 +75,10 @@
         width: 100%;
         text-align: center;
     }
-    .work__item-info,
-    .about__info{
+    .about__img{
+        margin-bottom: 30px;
+    }
+    .work__item-info{
         margin-left: 0;
         text-align: center;
     }
@@ -157,6 +159,9 @@
     }
     .header__bottom{
         padding: 15px 0;
+    }
+    .about__info{
+        margin-left: 0;
     }
 }
 @media (max-width: 320px){
