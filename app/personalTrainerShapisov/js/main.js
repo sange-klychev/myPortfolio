@@ -11,7 +11,7 @@ $(() => {
 
     $('.burger-menu').on('click', () => {
         $('.burger-menu').toggleClass('burger-active');
-        $('.header__box').toggle();
+        
         $('.header').toggleClass('header-slide');
     });
 
