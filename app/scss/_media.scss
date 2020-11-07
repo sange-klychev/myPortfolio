@@ -180,6 +180,13 @@
     .about__info{
         margin-left: 0;
     }
+    .header__social-item{
+        height: 36px;
+        padding-left: 40px;
+        .header__social-name{
+            font-size: 14px;
+        }
+    } 
 }
 @media (max-width: 320px){
     .work__item-img img,

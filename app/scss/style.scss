@@ -132,32 +132,70 @@
     bottom: 15px;
 }
 .header__social{
-    li{
+    
+    &-item{
         display: inline-block;
         color: #fff;
-        font-size: 30px;
-        transition: all .7s;
-        & + li{
-            margin-left: 20px;
+        font-size: 28px;
+        width: 50px;
+        height: 40px;
+        background-color: rgba(#fff, 0);
+        border-radius: 50px;
+        padding: 5px 15px 5px 50px;
+        position: relative;
+        .header__social-name{
+            font-size: 20px;
+            vertical-align: middle;
+            font-weight: 700;
+            width: 50px;
+            opacity: 0;
         }
         &:hover{
+            
             color: #278651;
-        }
-        &:nth-child(1){
-            animation-delay: .5s;
+            width: auto;
+            
+            background-color: rgba(#fff, .7);
+            transition: all .3s;
+            .header__social-name{
+                opacity: 1;
+                width: auto;
+            }
         }
         &:nth-child(2){
-            animation-delay: 1s;
+            animation-delay: .3s;
         }
         &:nth-child(3){
-            animation-delay: 1.5s;
+            animation-delay: .6s;
         }
         &:nth-child(4){
-            animation-delay: 2s;
+            animation-delay: .9s;
         }
         &:nth-child(5){
-            animation-delay: 2.5s;
+            animation-delay: 1.2s;
         }
+    }
+    &-link{
+        &::before{
+            font-family: 'icomoon';
+            position: absolute;
+            left: 10px;
+        }
+    }
+    .facebook::before{
+        content: "\f09a";
+    }
+    .github::before{
+        content: "\f09b";
+    }
+    .instagram::before{
+        content: "\f16d";
+    }
+    .vkontakte::before{
+        content: "\f189";
+    }
+    .telegram::before{
+        content: "\f1d8";
     }
 }
 .header__arrow{
@@ -232,7 +270,7 @@
     } 
     button{
         width: 10px;
-        height: 14px;
+        height: 10px;
         border: 1px solid #278651;
         border-radius: 50%;
         cursor: pointer;
@@ -440,24 +478,6 @@
             border-radius: 3px;
         }
     }  
-}
-
-
-.footer{
-    background-image: url(../images/footer-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    color: #fff;
-    text-align: center;
-    padding: 85px 0 60px;
-    .header__social{
-        margin-bottom: 20px;
-    }
-}
-.footer__logo{
-    margin-bottom: 20px;
 }
 
 
