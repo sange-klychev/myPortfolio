@@ -36,9 +36,6 @@
     .header__title{
         font-size: 75px;
     }
-    .header__arrow{
-        display: none;
-    }
     .about__inner{
         flex-wrap: wrap;
         justify-content: center;
@@ -48,6 +45,9 @@
     }
     .experience .container{
         padding: 0;
+    }
+    .header__bottom{
+        display: none;
     }
 }
 @media (max-width: 990px){
@@ -144,9 +144,6 @@
     }
     .menu__list li{
         font-size: 15px;
-    }
-    .header__bottom{
-        padding: 15px 0;
     }
     .about__card{
         order: -1;
