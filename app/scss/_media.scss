@@ -43,6 +43,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .experience{
+        overflow: hidden;
+    }
+    .experience .container{
+        padding: 0;
+    }
 }
 @media (max-width: 990px){
     .slick-arrow{
@@ -95,7 +101,7 @@
         min-height: 200px;
     }
     .title{
-        font-size: 30px;
+        font-size: 26px;
         padding-left: 80px;
         &::before{
             width: 55px;
@@ -108,7 +114,8 @@
         font-size: 14px;
     }
     .title{
-        padding-left: 0;
+        padding: 0 10px;
+        line-height: 30px;
         &::before{
             width: 0;
             height: 0;
@@ -160,6 +167,7 @@
     }
     .education__line{
         text-align: left;
+        margin-left: 20px;
     }
     .education__info{
         left: 30px;
