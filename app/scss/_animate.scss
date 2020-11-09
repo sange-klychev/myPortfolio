@@ -48,3 +48,8 @@
     opacity: 1;
   }
 }
+@keyframes line{
+  to{
+    transform: scaleY(1);
+  }
+}

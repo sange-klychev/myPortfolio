@@ -20,6 +20,10 @@ $(() => {
             }
         ]
     });
+    
+    $('.download__btn').click(function(){
+        $(this).toggleClass("active");
+    });
 
     wow = new WOW(
         {
