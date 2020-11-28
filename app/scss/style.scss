@@ -227,11 +227,15 @@
     min-height: 340px;
 }
 .work__item-info{
+    max-width: 400px;
     margin-left: 30px;
 }
 .work__item-name{
     @include f700;
     font-size: 30px;
+}
+.work__item-text{
+    @include font-text;
 }
 .work__item-link,
 .more-link{
@@ -240,6 +244,8 @@
     border-radius: 10px;
     text-align: center;
     transition: all .5s;
+    @include font-text;
+    font-weight: 700;
     &:hover{
         color: #fff;
         background-color: #278651;
@@ -270,6 +276,7 @@
     font-size: 18px;
     opacity: 0;
     animation: showText .5s 1s linear forwards;
+    @include font-text;
     ul li{
         padding: 5px 10px;
         padding-left: 40px;
@@ -478,6 +485,7 @@
         transform: translateX(0);
         opacity: 1;
         transition: all 1s;
+        @include font-text;
     }
 }
 .line{
