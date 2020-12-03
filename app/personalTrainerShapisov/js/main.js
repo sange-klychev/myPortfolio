@@ -67,6 +67,17 @@ $(() => {
             }
         });
     });
+    $('#category__tab-1').on('click', () => {
+        $('.about__me').css('display', 'block');
+        $('.career').css('display', 'none');
+    });
+    $('#category__tab-2').on('click', () => {
+        $('.about__me').css('display', 'none');
+        $('.career').css('display', 'block');
+    });
+    $('.input, .textarea, .button').on('click', () => {
+        $('.label').css('top','-3px');
+    });
     wow = new WOW(
         {
             boxClass: 'wow',      // default
