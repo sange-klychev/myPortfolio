@@ -76,7 +76,7 @@ $(() => {
         $('.career').css('display', 'block');
     });
     $('.input, .textarea, .button').on('click', () => {
-        $('.label').css('top','-3px');
+        $('.label').css('top','-1px');
     });
     wow = new WOW(
         {
