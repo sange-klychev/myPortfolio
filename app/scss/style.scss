@@ -236,6 +236,10 @@
 }
 .work__item-text{
     @include font-text;
+    a{
+        color: #278651;
+        @include f700;
+    }
 }
 .work__item-link,
 .more-link{
